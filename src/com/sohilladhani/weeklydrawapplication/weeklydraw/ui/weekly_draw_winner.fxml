@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" prefHeight="400.0" prefWidth="600.0"
+            xmlns="http://javafx.com/javafx/8"
+            fx:controller="com.sohilladhani.weeklydrawapplication.weeklydraw.controllers.WeeklyDrawController">
+    <children>
+        <Label layoutX="120.0" layoutY="40.0" prefHeight="17.0" prefWidth="360.0"
+               text="---- Winner of this week is ----">
+            <font>
+                <Font size="22.0"/>
+            </font>
+        </Label>
+        <Label layoutX="120.0" layoutY="124.0" prefHeight="15.0" prefWidth="90.0" text="Name:"/>
+        <Label layoutX="120.0" layoutY="153.0" prefHeight="15.0" prefWidth="90.0" text="Address:"/>
+        <Label layoutX="120.0" layoutY="185.0" prefHeight="15.0" prefWidth="90.0" text="Phone:"/>
+        <Label layoutX="120.0" layoutY="215.0" prefHeight="15.0" prefWidth="90.0" text="Email:"/>
+        <Label layoutX="120.0" layoutY="242.0" prefHeight="15.0" prefWidth="90.0" text="Week:"/>
+        <Label fx:id="weeklyWinnerName" layoutX="226.0" layoutY="124.0"/>
+        <Label fx:id="weeklyWinnerAddress" layoutX="226.0" layoutY="153.0"/>
+        <Label fx:id="weeklyWinnerPhone" layoutX="226.0" layoutY="185.0"/>
+        <Label fx:id="weeklyWinnerEmail" layoutX="226.0" layoutY="215.0"/>
+        <Label fx:id="weeklyWinnerWeek" layoutX="226.0" layoutY="242.0"/>
+        <Label layoutX="210.0" layoutY="343.0" prefHeight="30.0" prefWidth="237.0"
+               text="Congratulations!">
+            <font>
+                <Font size="25.0"/>
+            </font>
+        </Label>
+    </children>
+</AnchorPane>

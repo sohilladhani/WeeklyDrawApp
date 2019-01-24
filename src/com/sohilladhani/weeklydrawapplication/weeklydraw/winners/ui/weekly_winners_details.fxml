@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" prefHeight="720.0" prefWidth="1280.0"
+            xmlns="http://javafx.com/javafx/8"
+            fx:controller="com.sohilladhani.weeklydrawapplication.weeklydraw.winners.controllers.WeeklyWinnersController">
+    <children>
+        <AnchorPane prefHeight="100.0" prefWidth="1280.0">
+            <children>
+                <HBox prefHeight="100.0" prefWidth="1280.0">
+                    <children>
+                        <Label text="Weekly Winners Data">
+                            <font>
+                                <Font size="26.0"/>
+                            </font>
+                        </Label>
+                    </children>
+                    <padding>
+                        <Insets left="500.0" top="40.0"/>
+                    </padding>
+                </HBox>
+            </children>
+        </AnchorPane>
+        <AnchorPane layoutY="100.0" prefHeight="620.0" prefWidth="1280.0">
+            <children>
+                <TableView fx:id="weeklyWinnersTableView" prefHeight="620.0" prefWidth="1280.0">
+                    <columns>
+                        <TableColumn fx:id="weeklyWinnerIdColumn" prefWidth="141.0"
+                                     resizable="false" text="ID"/>
+                        <TableColumn fx:id="weeklyWinnerNameColumn" prefWidth="212.0"
+                                     resizable="false" text="Name"/>
+                        <TableColumn fx:id="weeklyWinnerAddressColumn" prefWidth="292.0"
+                                     resizable="false" text="Address"/>
+                        <TableColumn fx:id="weeklyWinnerPhoneColumn" prefWidth="193.0"
+                                     resizable="false" text="Phone"/>
+                        <TableColumn fx:id="weeklyWinnerEmailColumn" prefWidth="233.0"
+                                     resizable="false" text="Email"/>
+                        <TableColumn fx:id="weeklyWinnerWeekColumn" prefWidth="208.0"
+                                     resizable="false" text="Week"/>
+                    </columns>
+                </TableView>
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>

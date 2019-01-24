@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" prefHeight="720.0" prefWidth="1280.0"
+            xmlns="http://javafx.com/javafx/8"
+            fx:controller="com.sohilladhani.weeklydrawapplication.customerinfo.controllers.CustomerInfoController">
+    <children>
+        <TabPane prefHeight="720.0" prefWidth="1280.0" tabClosingPolicy="UNAVAILABLE">
+            <tabs>
+                <Tab text="Students">
+                    <content>
+                        <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                            <children>
+                                <HBox layoutX="359.0" prefHeight="684.0" prefWidth="920.0">
+                                    <children>
+                                        <TableView fx:id="customerInfoModelTableView"
+                                                   prefHeight="684.0" prefWidth="928.0">
+                                            <columns>
+                                                <TableColumn fx:id="customerIdColumn"
+                                                             prefWidth="75.0" resizable="false"
+                                                             text="ID"/>
+                                                <TableColumn fx:id="customerNameColumn"
+                                                             prefWidth="198.0" resizable="false"
+                                                             text="Name"/>
+                                                <TableColumn fx:id="customerAddressColumn"
+                                                             minWidth="0.0" prefWidth="162.0"
+                                                             resizable="false" text="Address"/>
+                                                <TableColumn fx:id="customerPhoneColumn"
+                                                             prefWidth="153.0" resizable="false"
+                                                             text="Phone"/>
+                                                <TableColumn fx:id="customerEmailColumn"
+                                                             prefWidth="173.0" resizable="false"
+                                                             text="Email"/>
+                                                <TableColumn fx:id="customerWeekColumn"
+                                                             prefWidth="156.0" resizable="false"
+                                                             text="Week"/>
+                                            </columns>
+                                        </TableView>
+                                    </children>
+                                </HBox>
+                                <VBox prefHeight="684.0" prefWidth="359.0">
+                                    <padding>
+                                        <Insets left="15.0" right="15.0"/>
+                                    </padding>
+                                    <children>
+                                        <Label prefHeight="29.0" prefWidth="358.0"
+                                               text="Add Customers">
+                                            <padding>
+                                                <Insets left="100.0"/>
+                                            </padding>
+                                        </Label>
+                                        <TextField fx:id="customerName" promptText="Customer Name">
+                                            <VBox.margin>
+                                                <Insets left="15.0" right="15.0"/>
+                                            </VBox.margin>
+                                        </TextField>
+                                        <TextField fx:id="customerAddress" promptText="Address">
+                                            <VBox.margin>
+                                                <Insets left="15.0" right="15.0"/>
+                                            </VBox.margin>
+                                        </TextField>
+                                        <TextField fx:id="customerPhone" promptText="Phone">
+                                            <VBox.margin>
+                                                <Insets left="15.0" right="15.0"/>
+                                            </VBox.margin>
+                                        </TextField>
+                                        <TextField fx:id="customerEmail" promptText="Email">
+                                            <VBox.margin>
+                                                <Insets left="15.0" right="15.0"/>
+                                            </VBox.margin>
+                                        </TextField>
+                                        <TextField fx:id="customerWeek" promptText="Email">
+                                            <VBox.margin>
+                                                <Insets left="15.0" right="15.0"/>
+                                            </VBox.margin>
+                                        </TextField>
+
+                                        <Button fx:id="addCustomerButton" mnemonicParsing="false"
+                                                onAction="#onAddCustomerButtonAction"
+                                                prefHeight="25.0" prefWidth="298.0"
+                                                text="Add Customer">
+                                            <VBox.margin>
+                                                <Insets left="15.0"/>
+                                            </VBox.margin>
+                                        </Button>
+                                        <Button fx:id="clearFormButton" mnemonicParsing="false"
+                                                onAction="#onClearFormButtonAction"
+                                                prefHeight="25.0" prefWidth="298.0"
+                                                text="Clear Form">
+                                            <VBox.margin>
+                                                <Insets left="15.0"/>
+                                            </VBox.margin>
+                                        </Button>
+                                        <Button fx:id="loadDataButton" mnemonicParsing="false"
+                                                onAction="#onLoadDataButtonAction" prefHeight="25.0"
+                                                prefWidth="298.0" text="Load Data">
+                                            <VBox.margin>
+                                                <Insets left="15.0"/>
+                                            </VBox.margin>
+                                        </Button>
+                                    </children>
+                                </VBox>
+                            </children>
+                        </AnchorPane>
+                    </content>
+                </Tab>
+            </tabs>
+        </TabPane>
+    </children>
+</AnchorPane>
