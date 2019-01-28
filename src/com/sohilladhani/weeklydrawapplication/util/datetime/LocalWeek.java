@@ -26,9 +26,9 @@ public class LocalWeek {
             lastDayOfTheWeek = lastDayOfTheWeek.plusDays(1);
         }
 
-        return firstDayOfTheWeek.format(DateTimeFormatter.ofPattern("MMM D")) +
+        return firstDayOfTheWeek.format(DateTimeFormatter.ofPattern("dd-MMM-yyyy")) +
                 " - " +
-                lastDayOfTheWeek.format(DateTimeFormatter.ofPattern("MMM D"));
+                lastDayOfTheWeek.format(DateTimeFormatter.ofPattern("dd-MMM-yyyy"));
     }
 
 }
